@@ -1,0 +1,143 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Comfortaa&subset=latin,cyrillic-ext);
+
+html, body {
+	height: 100%;
+}
+html {
+	font-family: arial;
+}
+body {
+	background-image: url("../images/b.background.jpg");
+	color: #336600;
+}
+.wrap {
+	min-height: 100%;
+}
+.main {
+	overflow:auto;
+	padding-bottom: 3px;
+}  /* must be same height as the footer */
+.footer {
+	position: relative;
+	margin-top: -3px; /* negative value of footer height */
+	height: 3px;
+	clear:both;
+} 
+/*Opera Fix*/
+body:before {
+	content:"";
+	height:100%;
+	float:left;
+	width:0;
+	margin-top:-32767px;/
+}
+h1 {
+	margin-top: 60px;
+	margin-bottom: 20px;
+	font-size: 60px;
+	font-weight: 900;
+	text-align: center;
+	text-shadow: 2px 2px 1px #ECD405, 4px 4px 1px #008542, 6px 6px 1px #00602e;
+	font-family: 'Comfortaa', cursive;
+}
+h2 {
+	padding-left: 20px;
+	font-size: 30px;
+	font-weight: 700;
+}
+h3 {
+	padding-left: 20px;
+	font-size: 20px;
+	font-weight: 700;
+}
+nav {
+	font-size: 20px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	height: 40px;
+	background-color: #336600;
+}
+.container {
+	max-width: 1000px;
+	margin: 0 auto; 
+	border: 1px solid green;
+	box-sizing: border-box;
+}
+.grid tr td{
+	padding: 10px;
+}
+.grid tr td img{
+	border-top-left-radius: 150px;
+	border-bottom-left-radius: 150px;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+	border: 2px solid green;
+}
+.form {
+	padding: 5px;
+	max-width: 1000px;
+	margin: 0 auto; 
+	border: 1px solid green;
+	box-sizing: border-box;
+}
+footer {
+	background-color: #336600;
+	color: #004923;
+	text-shadow: 1px 1px 1px #ECD405;
+	text-align: center;
+	font-size: 15px;
+	padding: 3px;
+}
+a {
+	text-decoration: none;
+	color: #ECD405;
+}
+.btn {
+	color: #ECD405;
+	padding: 5px;
+	background-color: #10a55b;
+	border-radius: 2px;
+	box-shadow: 1px 1px 2px #333;
+}
+
+.btn:hover {
+	background-color: #008542;
+}
+.btn:active {
+	background-color: #00602e;
+	border-radius: 2px;
+	box-shadow: inset 1px 1px 2px #333;
+}
+.left {
+	display: inline;
+	position: fixed;
+	left: 10px;
+	top: 10px;
+}
+.right {
+	display: inline;
+	position: fixed;
+	right: 10px;
+	top: 10px;
+}
+.terms {
+	color: #CC181E;
+	text-decoration: underline;
+}
+.terms:active {
+	color: #7f070b;
+}
+article div p {
+	line-height: 1.4em;
+	padding: 10px;
+}
+.main-back {
+	background-color: rgba(0,91,1,0.2);
+}
+.law {
+	color: #0c230c;
+	text-decoration: underline;
+}

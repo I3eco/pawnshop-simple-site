@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Forms</title>
+		<link href="images/my_ico.jpg" rel="shortcut icon"/>
+		<link rel="stylesheet" href="css/style.css"/>
+	</head>
+	<body>
+		<div>
+			<header>
+				<nav>
+					<div class="nav">				
+						<span class="left">
+							<a class="btn" href="./index.html">Home</a>
+							<a class="btn" href="./page-2.html">About us</a>
+							<a class="btn" href="./page-3.html">Services</a>
+							<a class="btn" href="./page-4.html">Shops</a>
+							<a class="btn" href="./page-5.html">Contacts</a>
+						</span>
+						<span class="right">
+							<a class="btn" href="form.html">Registration</a>
+						</span>	
+					</div>							
+				</nav>
+				<h1>Pawn Shop "Money for All"</h1>
+			</header>
+		</div>
+		<div class="form">
+			<form action="form.html" method="POST" enctype="multipart/form-data">
+			
+				<fieldset id="registration-form">
+					
+					<legend>Registration form</legend>
+				
+					<div>
+						<label for="username">User name:</label><br/>
+						<input type="text" name="name" id="username" placeholder="Username" required />
+					</div>
+					
+					<br/>
+					
+					<div>
+						<label for="usermail">E-mail:</label><br/>
+						<input type="email" name="email" id="usermail" placeholder="Email" required />
+					</div>
+					
+					<br/>
+					
+					<div>
+						<label for="userpass">Enter password:</label><br/>
+						<input type="password" name="password" id="userpass" placeholder="Enter password" required />
+					</div>
+
+					<br/>
+					
+					<div>
+						<input type="checkbox" name="if_adult" value="agree" id="18-years" required />
+						<label for="18-years">Please comfirm that you are 18 years old:</label>
+					</div>
+
+					<br/>
+					
+					<div>
+						<label for="personal-info">More information:</label><br/>
+						<textarea name="personal_info" id="personal-info" cols="40" rows="20" >
+						</textarea>
+					</div>
+
+					<br/>
+					
+					<div>
+						<input type="radio" name="gender" value="male" id="male" />
+						<label for="male">Male</label>
+						
+						<input type="radio" name="gender" value="female" id="female" />
+						<label for="female">Female</label>
+					</div>
+					
+					<br/>
+					
+					<div>
+						<input type="checkbox" name="terms_condition" value="agree" id="terms" required />
+						<label for="terms"><a class="terms" href="./terms.html" target="_blank">I agree with the terms of this site.</a></label>
+					</div>	
+
+					<br/>
+					
+					<div>
+						<input type="submit" value="Registration">
+					</div>
+
+					<br/>
+
+					<a class="btn" href="./index.html">Back to start</a>
+					
+				</fieldset>
+			</form>
+		</div>
+		<footer>
+			Copyright!!!&copy; Pawn Shop "Money for All" Ltd. 2015-2018
+		</footer>
+	</body>
+</html>
